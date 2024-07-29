@@ -1,0 +1,1 @@
+(switch-to-buffer(url-retrieve"https://binary.golf/5/5"'ignore))

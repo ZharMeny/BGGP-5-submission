@@ -1,0 +1,25 @@
+#+title: Binary Golf Grand Prix Five entry
+
+* Instructions:
+You will need a fairly recent version of GNU Emacs installed;
+
+In the same directory as ~entry.el~ file run the following:
+#+begin_src shell
+emacs -Q -l entry.el
+# -Q is optional
+#+end_src
+
+An Emacs frame will open showing the following:
+#+begin_example
+HTTP/1.1 200 OK
+<!-- Headers ommited for brevity -->
+
+Another #BGGP5 download!! @binarygolf https://binary.golf
+#+end_example
+
+For bonus points you can run the same code without a file via CLI
+arguments:
+#+begin_src shell
+emacs -Q --eval="(switch-to-buffer(url-retrieve\"https://binary.golf/5/5\"'ignore))"
+# Again, -Q is optional
+#+end_src
